@@ -1,0 +1,754 @@
+@font-face {
+    font-family: Product Sans;
+    src: url(./font/Product\Sans\Bold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.main {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: fixed; */
+    height: 10vh;
+    padding: 0 100px;
+    background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+    z-index: 2;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 12px;
+    font-size: 17px;
+    font-family: Product Sans;
+    color: white;
+}
+
+.one {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+}
+
+.fanta {
+    position: absolute;
+    width: 40vw;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.lemon-cut {
+    position: absolute;
+    width: 20vw;
+    top: 4%;
+    left: 35%;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.orange {
+    position: absolute;
+    width: 19vw;
+    top: 60%;
+    left: 50%;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.one h1 {
+    font-size: 20vw;
+    position: absolute;
+    font-family: Product-Sans;
+    color: white;
+}
+
+.leaf {
+    position: absolute;
+    width: 12vw;
+    top: 34%;
+    left: 14%;
+    transform: rotate(70deg);
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.two {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background-color: rgba(105, 56, 7, 0.954);
+}
+
+.lft {
+    width: 40vw;
+    height: 100%;
+}
+
+.rght {
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lft svg {
+    position: absolute;
+    width: 30vw;
+    top: 35%;
+    left: 8%;
+}
+
+.rght h2 {
+    font-size: 2vw;
+    color: white;
+    margin-bottom: 5vh;
+}
+
+.rght p {
+    width: 45vw;
+    color: white;
+}
+
+.three {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(to right, 20deg, rgba(255, 81, 0, 0.932));
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw;
+    align-items: center;
+}
+
+.cards {}
+
+.card,
+.card1,
+.card3 {
+    position: relative;
+    background-color: rgba(237, 226, 226, 0.902) !important;
+    width: 25vw;
+    height: 70vh;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.pepsi {
+    width: 70%;
+    position: absolute;
+    top: -5%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.lemon-cut-pepsi {
+    position: absolute;
+    top: -21%;
+    width: 66%;
+    /* height: 30vh; */
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.lemon-cut-cola {
+    position: absolute;
+    top: -20%;
+    width: 70%;
+    height: 50%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.coco {
+    width: 46%;
+    position: absolute;
+    top: 1%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+.fanta-res {
+    position: absolute;
+    width: 104%;
+    height: 68%;
+    /* display: none; */
+}
+
+.lemon-cut-res {
+    position: absolute;
+    height: 49%;
+    top: -18%;
+    /* display: none; */
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    z-index: 2;
+    position: absolute;
+    bottom: 13%;
+    color: black;
+    font-family: Product Sans;
+}
+
+button {
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: orange;
+}
+
+.section {
+    width: 100%;
+    height: 20vh;
+}
+
+@media (max-width: 355px) {
+    .fanta {
+        width: 69vw;
+    }
+    .lemon-cut {
+        width: 32vw;
+        top: 11%;
+        left: 45%;
+    }
+    .two {
+        height: 233vh;
+    }
+    .cntr {
+        display: none;
+    }
+    nav {
+        padding: 0 25px;
+        height: 50px;
+    }
+    .three {
+        margin-top: 15%;
+        height: 101vh;
+        width: 100%;
+        flex-direction: column;
+        position: relative;
+    }
+    .one {
+        height: 50vh;
+    }
+    .cards {}
+    .card,
+    .card1,
+    .card3 {
+        width: 70vw;
+        height: 59vh;
+        margin: 25px 0;
+    }
+    .leaf {
+        top: 21%;
+    }
+    .orange {
+        top: 38%;
+    }
+    .two {
+        flex-direction: column;
+        height: 180vh;
+    }
+    .rght {
+        width: 100%;
+    }
+    .lft {
+        width: 100%;
+        height: 70vh;
+    }
+    .rght p {
+        width: 100vw;
+        padding: 12px;
+    }
+    .rght h2 {
+        font-size: 6vw;
+        margin: auto;
+    }
+    .lft svg {
+        position: absolute;
+        width: 64vw;
+        top: 2%;
+        left: 20%;
+    }
+    .text h1 {
+        font-size: 12px;
+    }
+    .coco {
+        width: 63%;
+    }
+    .pepsi {
+        width: 97%;
+        height: 76%;
+    }
+    .fanta-res {
+        display: none;
+        width: 145%;
+    }
+    .orange1 {
+        display: none;
+        width: 85%;
+        height: 52%;
+    }
+}
+
+@media (min-width: 355px) and (max-width: 360px) {
+    .fanta {
+        width: 69vw;
+    }
+    .lemon-cut {
+        width: 37vw;
+        top: 11%;
+        left: 41%;
+    }
+    .two {
+        height: 233vh;
+    }
+    .cntr {
+        display: none;
+    }
+    nav {
+        padding: 0 25px;
+        height: 50px;
+    }
+    .three {
+        margin-top: 15%;
+        height: 101vh;
+        flex-direction: column;
+    }
+    .one {
+        height: 50vh;
+    }
+    .card,
+    .card1,
+    .card3 {
+        width: 86vw;
+        height: 59vh;
+        margin: 25px 0;
+    }
+    .leaf {
+        top: 21%;
+    }
+    .orange {
+        top: 38%;
+    }
+    .two {
+        flex-direction: column;
+        height: 180vh;
+    }
+    .rght {
+        width: 100%;
+    }
+    .lft {
+        width: 100%;
+        height: 70vh;
+    }
+    .rght p {
+        width: 100vw;
+        padding: 12px;
+    }
+    .rght h2 {
+        font-size: 6vw;
+        margin: auto;
+    }
+    .lft svg {
+        position: absolute;
+        width: 64vw;
+        top: 2%;
+        left: 20%;
+    }
+    .text h1 {
+        font-size: 12px;
+    }
+    .coco {
+        width: 47%;
+    }
+    .pepsi {
+        width: 76%;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 370px) {
+    .fanta {
+        width: 69vw;
+    }
+    .lemon-cut {
+        width: 37vw;
+        top: 11%;
+        left: 41%;
+    }
+    .two {
+        height: 233vh;
+    }
+    .cntr {
+        display: none;
+    }
+    nav {
+        padding: 0 25px;
+        height: 50px;
+    }
+    .three {
+        margin-top: 15%;
+        height: 101vh;
+        flex-direction: column;
+    }
+    .one {
+        height: 50vh;
+    }
+    .card,
+    .card1,
+    .card3 {
+        width: 86vw;
+        height: 59vh;
+        margin: 25px 0;
+    }
+    .leaf {
+        top: 21%;
+    }
+    .orange {
+        top: 38%;
+    }
+    .two {
+        flex-direction: column;
+        height: 180vh;
+    }
+    .rght {
+        width: 100%;
+    }
+    .lft {
+        width: 100%;
+        height: 70vh;
+    }
+    .rght p {
+        width: 100vw;
+        padding: 12px;
+    }
+    .rght h2 {
+        font-size: 6vw;
+        margin: auto;
+    }
+    .lft svg {
+        position: absolute;
+        width: 64vw;
+        top: 2%;
+        left: 20%;
+    }
+    .text h1 {
+        font-size: 12px;
+    }
+    .coco {
+        width: 47%;
+    }
+    .pepsi {
+        width: 76%;
+        top: -6%;
+    }
+}
+
+@media (min-width: 371px) and (max-width: 380px) {
+    .fanta {
+        width: 69vw;
+    }
+    .lemon-cut {
+        width: 37vw;
+        top: 11%;
+        left: 41%;
+    }
+    .two {
+        height: 233vh;
+    }
+    .cntr {
+        display: none;
+    }
+    nav {
+        padding: 0 25px;
+        height: 50px;
+    }
+    .three {
+        margin-top: 15%;
+        height: 101vh;
+        flex-direction: column;
+    }
+    .one {
+        height: 50vh;
+    }
+    .card,
+    .card1,
+    .card3 {
+        width: 86vw;
+        height: 59vh;
+        margin: 25px 0;
+    }
+    .leaf {
+        top: 21%;
+    }
+    .orange {
+        top: 38%;
+    }
+    .two {
+        flex-direction: column;
+        height: 180vh;
+    }
+    .rght {
+        width: 100%;
+    }
+    .lft {
+        width: 100%;
+        height: 70vh;
+    }
+    .rght p {
+        width: 100vw;
+        padding: 12px;
+    }
+    .rght h2 {
+        font-size: 6vw;
+        margin: auto;
+    }
+    .lft svg {
+        position: absolute;
+        width: 64vw;
+        top: 2%;
+        left: 20%;
+    }
+    .text h1 {
+        font-size: 12px;
+    }
+    .coco {
+        width: 47%;
+    }
+    .pepsi {
+        width: 76%;
+        top: -8%;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 400px) {
+    .fanta {
+        width: 69vw;
+    }
+    .lemon-cut {
+        width: 37vw;
+        top: 11%;
+        left: 41%;
+    }
+    .two {
+        height: 233vh;
+    }
+    .cntr {
+        display: none;
+    }
+    nav {
+        padding: 0 25px;
+        height: 50px;
+    }
+    .three {
+        margin-top: 15%;
+        height: 101vh;
+        flex-direction: column;
+    }
+    .one {
+        height: 50vh;
+    }
+    .card,
+    .card1,
+    .card3 {
+        width: 86vw;
+        height: 59vh;
+        margin: 25px 0;
+    }
+    .leaf {
+        top: 21%;
+    }
+    .orange {
+        top: 38%;
+    }
+    .two {
+        flex-direction: column;
+        height: 180vh;
+    }
+    .rght {
+        width: 100%;
+    }
+    .lft {
+        width: 100%;
+        height: 70vh;
+    }
+    .rght p {
+        width: 100vw;
+        padding: 12px;
+    }
+    .rght h2 {
+        font-size: 6vw;
+        margin: auto;
+    }
+    .lft svg {
+        position: absolute;
+        width: 64vw;
+        top: 2%;
+        left: 20%;
+    }
+    .text h1 {
+        font-size: 12px;
+    }
+    .coco {
+        width: 47%;
+        top: -2%;
+    }
+    .pepsi {
+        width: 76%;
+        top: -12%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 799px) {
+    nav {
+        padding: 2vw;
+    }
+    .one h1 {
+        font-size: 29vw;
+    }
+    .fanta {
+        width: 108vw;
+    }
+    .lemon-cut {
+        width: 50vw;
+        top: 18%;
+        left: 37%;
+    }
+    .orange {
+        width: 41vw;
+    }
+    .two {
+        height: 200vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lft {
+        width: 100vw;
+        height: 50%;
+    }
+    .lemon-cut {
+        width: 50vw;
+        top: 2%;
+        left: 37%;
+    }
+    .rght {
+        height: 63vh;
+        width: 100vw;
+    }
+    .rght h2 {
+        font-size: 4vw;
+        margin-left: 59px;
+    }
+    .rght p {
+        width: 80vw;
+        margin: auto;
+    }
+    .lft svg {
+        width: 80vw;
+        top: 0%;
+        left: 14%;
+    }
+    .three {
+        flex-direction: column;
+        height: 152vh;
+        width: 100%;
+        margin: 52px 0;
+        align-items: center;
+    }
+    .cards {
+        width: 36vw;
+        margin: 50px 0;
+    }
+    .card1,.card,.card3{
+        width: auto;
+    }
+    .fanta-res {
+        position: absolute;
+        top: -26px;
+        width: 72vw;
+        height: 29vh;
+        display: inline;
+    }
+    .lemon-cut-res {
+        position: absolute;
+        width: 48vw;
+        top: -27%;
+        display: inline;
+    }
+    .pepsi {
+        width: 50vw;
+    }
+    .coco {
+        width: 33vw;
+    }
+    .lemon-cut-pepsi {
+        top: -31%;
+        width: 55vw;
+    }
+    .lemon-cut-cola {
+        top: -27%;
+        width: 54vw;
+    }
+    .cntr {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .lemon-cut {
+        top: 21%;
+    }
+    .lemon-cut-pepsi {
+        top: -14%;
+        width: 87%;
+    }
+    .lemon-cut-res {
+        height: 39%;
+        top: -13%;
+    }
+    .lemon-cut-cola {
+        top: -13%;
+        width: 75%;
+        height: 40%;
+    }
+}
+
+@media (max-width: 1243px) {
+    .coco {
+        height: 67%;
+    }
+    .pepsi {
+        width: 76%;
+        height: 77%;
+    }
+}
+
+@media (min-width: 1243px) and (max-width: 1500px) {
+    .coco {
+        height: 67%;
+    }
+    .pepsi {
+        width: 76%;
+        height: 77%;
+    }
+}
